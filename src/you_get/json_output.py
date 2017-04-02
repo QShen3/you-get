@@ -14,7 +14,7 @@ def output(video_extractor, pretty_print=True):
     try:
         if ve.audiolang:
             out['audiolang'] = ve.audiolang
-    except NameError:
+    except AttributeError:
         pass
     except AttributeError:
         pass
